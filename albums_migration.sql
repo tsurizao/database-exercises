@@ -2,11 +2,11 @@ USE codeup_test_db;
 
 SHOW databases;
 
-DROP TABLE IF EXISTS albums;
-
 SHOW TABLES;
 
 DESCRIBE albums;
+
+DROP TABLE IF EXISTS albums;
 
 SELECT id, artist, name, release_date, sales, genre FROM albums;
 
