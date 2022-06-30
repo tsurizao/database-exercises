@@ -2,17 +2,20 @@ USE codeup_test_db;
 
 SHOW databases;
 
+SHOW tables;
+
 DROP TABLE IF EXISTS books;
 
-SELECT id, title, author, date_published, description, bestseller_weeks FROM books;
+SELECT id, title, author, date_published, description, bestseller_weeks
+FROM books;
 
 CREATE TABLE books
 (
-    id               INT UNSIGNED AUTO_INCREMENT,
-    title            VARCHAR(100),
-    author           VARCHAR(100),
-    date_published   VARCHAR(20),
-    description      TEXT(500),
-    bestseller_weeks INT UNSIGNED NOT NULL,
+    id               INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    title            VARCHAR(100) NOT NULL,
+    author           VARCHAR(100)          DEFAULT 'Unknown',
+    date_published   DATE         NOT NULL,
+    description      TEXT,
+    bestseller_weeks INT UNSIGNED NOT NULL DEFAULT 0,
     PRIMARY KEY (id)
 );
