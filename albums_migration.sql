@@ -4,9 +4,15 @@ SHOW databases;
 
 DROP TABLE IF EXISTS albums;
 
+SHOW TABLES;
+
+DESCRIBE albums;
+
+SELECT id, artist, name, release_date, sales, genre FROM albums;
+
 CREATE TABLE albums
 (
-    id           INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    id           INT UNSIGNED AUTO_INCREMENT,
     artist       VARCHAR(200) DEFAULT 'Unknown' NOT NULL,
     name         VARCHAR(200) DEFAULT 'Untitled' NOT NULL,
     release_date INT,
