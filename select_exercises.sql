@@ -21,8 +21,12 @@ FROM albums
 WHERE release_date BETWEEN 1990 AND 1999;
 
 # Which albums had less than 20 million certified sales
-SELECT name AS 'Albums with less than 20 million certified sales' FROM albums WHERE sales < 20;
+SELECT name AS 'Albums with less than 20 million certified sales'
+FROM albums
+WHERE sales < 20;
 
 # All the albums with a genre of "Rock".  Why do these query results not include albums with a genre of "Hard rock" or "Progressive rock"?
 # The other genres of rock aren't listed because the WHERE string 'rock' is specific, would need to use LIKE instead.
-SELECT name AS 'Albums with the genre of Rock' FROM Albums WHERE genre = 'rock';
+SELECT name AS 'Albums with the genre of Rock'
+FROM Albums
+WHERE genre = 'rock';
