@@ -1,7 +1,6 @@
 USE employees;
 
 # MySQL provides a way to return only unique results from our queries with the keyword DISTINCT.  For example to find all the unique titles within a company, we could run the following query:
-#SELECT DISTINCT title FROM titles;
 SELECT DISTINCT title FROM titles;
 
 # List the first 10 distinct last name sorted in descending order.
