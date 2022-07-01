@@ -41,7 +41,7 @@ WHERE last_name LIKE 'E%'
 SELECT DISTINCT last_name AS 'last_names_with_q_and_not_qu'
 FROM employees
 WHERE last_name LIKE '%q%'
-  AND last_name NOT LIKE '%qu%'
+  AND last_name NOT LIKE '%qu%';
 
 # Add a COUNT() to your results and use ORDER BY to make it easier to
 # find employees whose unusual name is shared with others.
