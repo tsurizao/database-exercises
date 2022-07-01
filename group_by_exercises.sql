@@ -38,7 +38,7 @@ WHERE last_name LIKE 'E%'
 -- Chleq
 -- Lindqvist
 -- Qiwen
-SELECT DISTINCT last_name AS 'last_names_with_q_and_not_qu'
+SELECT DISTINCT last_name
 FROM employees
 WHERE last_name LIKE '%q%'
   AND last_name NOT LIKE '%qu%';
@@ -48,7 +48,7 @@ WHERE last_name LIKE '%q%'
 -- 189 Chleq
 -- 190 Lindqvist
 -- 168 Qiwen
-SELECT DISTINCT COUNT(*), last_name AS 'last_names_with_q_and_not_qu'
+SELECT DISTINCT COUNT(*), last_name
 FROM employees
 
 WHERE last_name LIKE '%q%'
