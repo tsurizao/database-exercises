@@ -42,11 +42,10 @@ GROUP BY title;
 # Find the current salary of all current managers
 SELECT d.dept_name, CONCAT(e.first_name, ' ', e.last_name), s.salary
 FROM employees e
-         JOIN dept_emp de ON e.emp_no = de.emp_no
          JOIN dept_manager dm ON e.emp_no = dm.emp_no
-         JOIN departments d ON de.dept_no = d.dept_no
+         JOIN departments d ON dm.dept_no = d.dept_no
          JOIN salaries s ON e.emp_no = s.emp_no
-WHERE dm.to_date > NOW() && de.dept_no = d.dept_no && s.to_date > NOW()
+WHERE dm.to_date > NOW() && s.to_date > NOW()
 ORDER BY d.dept_name;
 
 # BONUS Find the names of all current employees, their department name, and their current manager's name
