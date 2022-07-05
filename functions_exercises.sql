@@ -30,7 +30,7 @@ SELECT *
 FROM employees
 WHERE (month(birth_date) = 12 AND day(birth_date) = 25)
   AND (year(hire_date) >= 1990 AND year(hire_date) <= 1999)
-ORDER BY year(hire_date) DESC;
+ORDER BY birth_date, year(hire_date) DESC;
 
 # For your query of employees born on Christmas and hired in the 90s,
 # use datediff() to find how many days they have been working at the

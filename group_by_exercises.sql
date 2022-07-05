@@ -50,7 +50,6 @@ WHERE last_name LIKE '%q%'
 -- 168 Qiwen
 SELECT DISTINCT COUNT(*), last_name
 FROM employees
-
 WHERE last_name LIKE '%q%'
   AND last_name NOT LIKE '%qu%'
 GROUP BY last_name;
