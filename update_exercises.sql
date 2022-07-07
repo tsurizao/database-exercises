@@ -1,6 +1,5 @@
 USE codeup_test_db;
 
-
 # Write select statements to output each of the following:
 # After each SELECT add an UPDATE statement to:
 

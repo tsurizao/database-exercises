@@ -1,13 +1,5 @@
 USE employees;
 
-SELECT *
-FROM titles;
-SELECT *
-FROM employees;
-SELECT *
-FROM dept_emp;
-SELECT *
-FROM dept_manager;
 # Find all the employees with the same hire date as employee 101010 using a subquery
 -- 69 rows
 SELECT CONCAT(first_name, ' ', last_name)

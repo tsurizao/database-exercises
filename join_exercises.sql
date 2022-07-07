@@ -1,18 +1,5 @@
 USE employees;
 
-SELECT DISTINCT *
-FROM departments;
-SELECT DISTINCT *
-FROM dept_manager;
-SELECT DISTINCT *
-FROM employees;
-SELECT DISTINCT *
-FROM dept_emp;
-SELECT DISTINCT *
-FROM titles;
-SELECT DISTINCT *
-FROM salaries;
-
 # Write a query that shows each department along with the name of the current manager for that department
 SELECT d.dept_name                            AS 'Department Name',
        CONCAT(e.first_name, ' ', e.last_name) AS 'Department Manager'
